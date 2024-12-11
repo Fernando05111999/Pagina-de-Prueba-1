@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="info.css">
+    <title>Mi Página Web Informativa</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="./Info.html">Inicio</a></li>
+            <li><a href="./dragones.html">¿Quienes Somos?</a></li>
+            <li><a href="./encuentranos en.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <section id="home" class="content">
+        <h1>"Los Dragones Te Informan"</h1>
+        <img src="./dragones_1.jpg" alt="Integrantes">
+    </section>
+    <section id="home" class="content">
+        <h1>"Paseo Al Camping El Churki"</h1>
+        <div class="carousel">
+            <img src="churqui_1.jpg" alt="Imagen 1" class="active">
+            <img src="churqui_2.jpg" alt="Imagen 2">
+            <img src="churqui_3.jpg" alt="Imagen 3">
+            <img src="churqui_4.jpg" alt="Imagen 3">        
+            <div class="carousel-controls">
+                <span class="prev">&laquo; Anterior</span>
+                <span class="next">Siguiente &raquo;</span>
+            </div>
+        </div>
+        <script>
+            let currentIndex = 0;
+            const images = document.querySelectorAll('.carousel img');
+            const totalImages = images.length;
+            document.querySelector('.next').addEventListener('click', () => {
+                images[currentIndex].classList.remove('active');
+                currentIndex = (currentIndex + 1) % totalImages;
+                images[currentIndex].classList.add('active');
+            });
+            document.querySelector('.prev').addEventListener('click', () => {
+                images[currentIndex].classList.remove('active');
+                currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+                images[currentIndex].classList.add('active');
+            });
+        </script>
+    </section>
+</body>
+<footer>
+    <a href="https://www.facebook.com/Fernando.Vilca009/" target="_blank">
+        <img src="facebook.png" alt="Facebook">
+    </a>
+    <a href="https://www.instagram.com/fernando_vilca05/" target="_blank">
+        <img src="instagram.png" alt="Instagram">
+    </a>
+    <a href="https://x.com/fernando6507995" target="_blank">
+        <img src="x.png" alt="Twitter">
+    </a>
+</footer>
+</html>

@@ -1,0 +1,150 @@
+/* Reseteo de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ff0000;
+    color: #333;
+}
+
+/* Estilos para el menú de navegación */
+nav {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6347;
+}
+
+/* Estilos para las secciones */
+.content {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.map-container { 
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; 
+}
+.act-container { 
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; 
+}
+.content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: justify;
+    color: #555;
+}
+.content img {
+    width: 80%;
+    height: auto;
+    margin: 0 auto 20px auto;
+    display: block;
+    border: 5px solid red; /* Añade un borde gris claro a las imágenes */
+    border-radius: 10px; /* Añade esquinas redondeadas a las imágenes */
+}
+/* Estilos específicos para secciones adicionales */
+#about .content h1 {
+    color: #ff6347;
+}
+#contact .content h1 {
+    color: #6a5acd;
+}
+/* Estilos específicos para secciones adicionales */
+#about .content h1 {
+    color: #ff6347;
+}
+
+#contact .content h1 {
+    color: #6a5acd;
+}
+
+
+        .carousel {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .carousel img {
+            width: 100%;
+            display: none;
+        }
+
+        .carousel img.active {
+            display: block;
+        }
+
+        .carousel-controls {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .carousel-controls span {
+            background-color: rgba(0,0,0,0.5);
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+        }
+iframe {
+            max-width: 100%;
+            width: 500px; /* Ajusta el tamaño según tus necesidades */
+            height: 380px; /* Ajusta el tamaño según tus necesidades */
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+}
+
+footer img {
+    margin: 0 10px;
+    width: 50px;
+    height: 50px;
+    }
